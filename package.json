@@ -13,5 +13,8 @@
     "center-align": "^1.0.1",
     "chalk": "^5.4.1",
     "figlet": "^1.8.0"
+  },
+  "bin": {
+    "relax-terminal": "app.js"
   }
 }
