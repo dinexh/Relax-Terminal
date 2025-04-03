@@ -23,7 +23,9 @@ Start your breathing session with:
 
 ```bash
 relax-terminal
+
 ```
+
 
 ### What to Expect
 

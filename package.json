@@ -15,7 +15,7 @@
     "chalk": "^5.4.1",
     "figlet": "^1.8.0"
   },
-  "bin": {
+ "bin": {
     "relax-terminal": "./app.js"
   }
 }
