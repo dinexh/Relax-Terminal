@@ -52,7 +52,10 @@ ISC
 
 ## Author
 
-[Your Name]
+Dinesh Korukonda
+More of me at:
+https://github.com/dinexh
+https://dineshkorukonda.in
 
 ---
 
