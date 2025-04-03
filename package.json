@@ -10,6 +10,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "chalk": "^5.4.1"
+    "center-align": "^1.0.1",
+    "chalk": "^5.4.1",
+    "figlet": "^1.8.0"
   }
 }

@@ -1,26 +1,46 @@
-import chalk from "chalk";
-import readline from "readline";
+import readline from 'readline';
+import chalk from 'chalk';
+import figlet from 'figlet';
+import centerAlign from 'center-align';
 
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-async function breathingExercise() {
-  const phases = [
-    { text: "Inhale...", duration: 4000, color: chalk.green },
-    { text: "Hold...", duration: 4000, color: chalk.yellow },
-    { text: "Exhale...", duration: 4000, color: chalk.blue },
-  ];
+const quotes = [
+    "Relax. Recharge. Refocus.",
+    "Take a deep breath and let it go.",
+    "Breathe in courage, breathe out fear.",
+    "The mind is like water. When it’s turbulent, it’s difficult to see."
+];
 
-  while (true) {
-    for (const phase of phases) {
-      readline.cursorTo(process.stdout, 0);
-      process.stdout.write(phase.color(phase.text));
-      await sleep(phase.duration);
-      readline.clearLine(process.stdout, 0);
-    }
-  }
-}
+const getRandomQuote = () => quotes[Math.floor(Math.random() * quotes.length)];
 
-console.clear();
-console.log(chalk.cyan("🧘 Welcome to the Terminal Breathing Exercise 🧘"));
-breathingExercise();
+const startBreathingExercise = (name) => {
+    console.clear();
+    console.log(chalk.blue(figlet.textSync(`Hello, ${name}!`, { horizontalLayout: 'full' })));
+    console.log(centerAlign(chalk.green(getRandomQuote()), process.stdout.columns));
+    console.log('\n');
 
+    const cycle = [
+        chalk.cyan('Inhale...'),
+        chalk.yellow('Hold...'),
+        chalk.magenta('Exhale...')
+    ];
+    
+    let index = 0;
+    setInterval(() => {
+        console.clear();
+        console.log(chalk.blue(figlet.textSync(`Hello, ${name}!`, { horizontalLayout: 'full' })));
+        console.log(centerAlign(chalk.green(getRandomQuote()), process.stdout.columns));
+        console.log('\n');
+        console.log(centerAlign(cycle[index], process.stdout.columns));
+        index = (index + 1) % cycle.length;
+    }, 4000);
+};
+
+rl.question(chalk.yellow('What is your name? '), (name) => {
+    startBreathingExercise(name);
+    rl.close();
+});
