@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readline from 'readline';
 import chalk from 'chalk';
 import figlet from 'figlet';

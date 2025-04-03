@@ -15,6 +15,6 @@
     "figlet": "^1.8.0"
   },
   "bin": {
-    "relax-terminal": "app.js"
+    "relax-terminal": "./app.js"
   }
 }
