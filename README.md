@@ -1,63 +1,46 @@
-🧘 Relax-Terminal: A Terminal Breathing Exercise
+# Relax Terminal 🧘
 
-Relax-Terminal is a simple, customizable terminal-based breathing exercise tool built with Node.js. It helps you practice deep breathing by displaying inhale, hold, and exhale prompts with smooth transitions.
+A simple terminal-based breathing exercise application to help you relax and focus.
 
-✨ Features
+## Features
 
-⏳ Guided Breathing – Inhale, Hold, and Exhale cycle with customizable durations.
+- Visual breathing guidance
+- Timed breathing phases (inhale, hold, exhale)
+- Color-coded instructions
+- Continuous operation
 
-🎨 Color-Coded Phases – Uses chalk to enhance the experience.
+## Installation
 
-🔄 Infinite Loop – Keeps running until you exit manually.
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/relax-terminal.git
 
-⚡ Lightweight & Fast – No extra dependencies apart from chalk.
+# Navigate to project directory
+cd relax-terminal
 
-🎛️ Customizable – Modify cycle durations and add animations!
-
-🚀 Installation
-
-Clone the repository:
-
-git clone https://github.com/yourusername/Relax-Terminal.git
-cd Relax-Terminal
-
-Install dependencies:
-
+# Install dependencies
 npm install
+```
 
-Run the app:
+## Usage
 
+Run the application with:
+
+```bash
 node app.js
+```
 
-⚙️ Customization
+Follow the on-screen breathing instructions:
+- 🟢 Green text for inhaling (4 seconds)
+- 🟡 Yellow text for holding (4 seconds)
+- 🔵 Blue text for exhaling (4 seconds)
 
-You can modify the breathing cycle durations inside app.js:
+## Dependencies
 
-const phases = [
-  { text: "Inhale...", duration: 4000, color: chalk.green },
-  { text: "Hold...", duration: 4000, color: chalk.yellow },
-  { text: "Exhale...", duration: 4000, color: chalk.blue },
-];
+- chalk - For colored terminal output
+- readline - For terminal cursor manipulation
 
-Want animations or sounds? Feel free to contribute! 🎨🎵
+## License
 
-🤝 Contributing
-
-We welcome contributions! To contribute:
-
-Fork the repo
-
-Create a new branch (git checkout -b feature-name)
-
-Commit changes (git commit -m "Added feature")
-
-Push to your branch (git push origin feature-name)
-
-Open a Pull Request 🚀
-
-📜 License
-
-MIT License - You can use, modify, and distribute this project freely.
-
-🎉 Enjoy a calming breathing session right from your terminal! 🧘‍♂️
+MIT
 
