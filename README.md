@@ -54,8 +54,8 @@ ISC
 
 Dinesh Korukonda
 More of me at:
-https://github.com/dinexh
-https://dineshkorukonda.in
+-https://github.com/dinexh
+-https://dineshkorukonda.in
 
 ---
 
