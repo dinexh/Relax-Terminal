@@ -17,15 +17,13 @@ A mindful breathing exercise companion for developers that brings calmness right
 npm install -g relax-terminal
 ```
 
-## 📖 Usage
+## 📚 Usage
 
 Start your breathing session with:
 
 ```bash
 relax-terminal
-
 ```
-
 
 ### What to Expect
 
@@ -38,7 +36,7 @@ relax-terminal
 
 To exit the application, press `Ctrl + C`
 
-## 🛠️ Technical Details
+## 🧑‍💻 Technical Details
 
 ### Dependencies
 
@@ -60,19 +58,12 @@ To exit the application, press `Ctrl + C`
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+### Next Steps to Boost Open Source Contributions:
 
-This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
+1️⃣ **Add Issues & Labels on GitHub** – Create some beginner-friendly issues (`good first issue`, `help wanted`) to encourage contributions.
+2️⃣ **Improve Docs** – Add screenshots or GIFs showing how the tool works.
+3️⃣ **Automate Releases** – Set up a GitHub Action to auto-publish to npm on new commits.
+4️⃣ **Community Engagement** – Share on dev forums like Dev.to, Hashnode, or Reddit.
+5️⃣ **Consider Future Features** – Maybe customization options, more breathing exercises, or a fun ASCII animation?
 
-## 👤 Author
-
-**Dinesh Korukonda**
-
-- GitHub: [@dinexh](https://github.com/dinexh)
-- Website: [dineshkorukonda.in](https://dineshkorukonda.in)
-
----
-
-<p align="center">
-  <i>Take a deep breath. Code better. Live better. 🌟</i>
-</p>
+## 📝 License
