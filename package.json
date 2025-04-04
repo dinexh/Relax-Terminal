@@ -1,6 +1,6 @@
 {
   "name": "relax-terminal",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "main": "app.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "chalk": "^5.4.1",
     "figlet": "^1.8.0"
   },
- "bin": {
+  "bin": {
     "relax-terminal": "./app.js"
   }
 }
